@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezra Baraka - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* --- SCREEN STYLES (Dark Mode) --- */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #e5e7eb;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; margin: 0; }
+        
+        h1 { font-size: 2.8rem; color: #ffffff; margin-bottom: 5px; }
+        
+        .header-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            color: #60a5fa;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #9ca3af;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        .contact-info a { color: #9ca3af; text-decoration: none; transition: color 0.3s; }
+        .contact-info a:hover { color: #60a5fa; }
+        .contact-info i { color: #60a5fa; margin-right: 5px; }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .item { margin-bottom: 25px; }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .item-title { font-size: 1.1rem; font-weight: 600; color: #ffffff; }
+        .item-subtitle { font-size: 0.95rem; color: #60a5fa; font-weight: 500; }
+        .item-date { font-size: 0.85rem; color: #9ca3af; font-style: italic; }
+
+        ul { margin-top: 5px; margin-bottom: 0; padding-left: 20px; }
+        li { margin-bottom: 8px; font-size: 0.95rem; color: #d1d5db; }
+        
+        .summary { font-size: 1rem; color: #d1d5db; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-category h4 { font-family: 'Inter', sans-serif; color: #60a5fa; font-size: 0.95rem; margin-bottom: 5px; }
+        .skill-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .skill-tag {
+            background-color: #2d2d2d;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #e5e7eb;
+        }
+
+        /* --- PRINT TO PDF STYLES (Clean, White Background) --- */
+        @media print {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+                padding: 0;
+            }
+            .cv-container {
+                background-color: #ffffff;
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            h1 { color: #000000; }
+            .header-title { color: #2563eb; }
+            .contact-info { color: #4b5563; border-bottom: 1px solid #ccc; }
+            .contact-info a { color: #4b5563; }
+            .contact-info i { color: #2563eb; }
+            .section-title { color: #000000; border-bottom: 1px solid #ccc; }
+            .item-title { color: #000000; }
+            .item-subtitle { color: #2563eb; }
+            .item-date { color: #4b5563; }
+            li, .summary { color: #1f2937; }
+            .skill-category h4 { color: #2563eb; }
+            .skill-tag { background-color: #f3f4f6; color: #1f2937; border: 1px solid #e5e7eb; }
+            
+            /* Prevents page breaks inside items */
+            .item { page-break-inside: avoid; }
+            .section-title { page-break-after: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <!-- HEADER -->
+        <header>
+            <h1>EZRA BARAKA</h1>
+            <div class="header-title">Computer Science Student & Developer</div>
+            
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +254 799 786 915</span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ezra-baraka-432252267/" target="_blank">linkedin.com/in/ezra-baraka</a></span>
+                <span><i class="fab fa-github"></i> <a href="https://github.com/SpaceEcho00" target="_blank">github.com/SpaceEcho00</a></span>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section>
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary">
+                Highly motivated Computer Science student with a strong foundation in software engineering, data analysis, and electrical engineering principles. Experienced in building full-stack applications, data pipelines, and machine learning models. Passionate about solving complex problems, exploring the intersection of AI and software development, and contributing to impactful tech communities.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Languages & Databases</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">DuckDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Frameworks & Tools</h4>
+                    <div class="skill-list">
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">pandas</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS (Pulled from your portfolio) -->
+        <section>
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Weather Analytics Dashboard</span>
+                    <span class="item-date">Python, Streamlit</span>
+                </div>
+                <ul>
+                    <li>Built a dynamic data visualization dashboard using Streamlit and Python.</li>
+                    <li>Integrated data pipelines to process and display real-time weather analytics.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Song Recommendation Engine</span>
+                    <span class="item-date">Python, Machine Learning</span>
+                </div>
+                <ul>
+                    <li>Developed a recommendation engine in Jupyter Notebook using data analysis and machine learning techniques.</li>
+                    <li>Processed and analyzed large musical datasets to generate personalized user recommendations.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Retail Multi-System Reconciliation Pipeline</span>
+                    <span class="item-date">Python, pandas, Data Engineering</span>
+                </div>
+                <ul>
+                    <li>Engineered a Python pipeline that reconciles POS, accounting, inventory, and purchase order data.</li>
+                    <li>Automated the detection of discrepancies in a simulated retail environment to improve data accuracy.</li>
+                </ul>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Class-Portfolio</span>
+                    <span class="item-date">ASP.NET, C#</span>
+                </div>
+                <ul>
+                    <li>Developed an ASP.NET web application for class management and student tracking.</li>
+                    <li>Implemented secure user authentication and database integration for managing student records.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2 class="section-title">Education</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor of Science in Computer Science</span>
+                    <span class="item-date">2024 – 2027 (Expected)</span>
+                </div>
+                <div class="item-subtitle">Catholic University of Eastern Africa (CUEA)</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Electrical Engineering (Partial Studies)</span>
+                    <span class="item-date">2022 – 2024</span>
+                </div>
+                <div class="item-subtitle">Moi University</div>
+                <ul>
+                    <li>Completed foundational coursework in electrical engineering, circuit analysis, and mathematics before transitioning to Computer Science.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Kenya Certificate of Secondary Education (KCSE)</span>
+                    <span class="item-date">2019 – 2022</span>
+                </div>
+                <div class="item-subtitle">Friends School Kamusinga</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Kenya Certificate of Primary Education (KCPE)</span>
+                    <span class="item-date">2010 – 2018</span>
+                </div>
+                <div class="item-subtitle">Disciples of Mercy Primary School</div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
